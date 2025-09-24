@@ -35,8 +35,108 @@
 <body>
   <h1>Enkät</h1>
   <form action="https://formspree.io/f/xzzjbqzl" method="POST">
-    
+
+    <!-- Frågor 1–40 -->
     <!-- Fråga 1 -->
     <fieldset>
       <legend>1. Är du nöjd med företagets kommunikation?</legend>
-      <div class="radio-grou
+      <div class="radio-group">
+        <label><input type="radio" name="fraga1" value="Ja"> Ja</label>
+        <label><input type="radio" name="fraga1" value="Nej"> Nej</label>
+        <label><input type="radio" name="fraga1" value="Ev. senare"> Ev. senare</label>
+      </div>
+    </fieldset>
+
+    <!-- Fråga 2 -->
+    <fieldset>
+      <legend>2. Fungerar samarbetet i din arbetsgrupp?</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="fraga2" value="Ja"> Ja</label>
+        <label><input type="radio" name="fraga2" value="Nej"> Nej</label>
+        <label><input type="radio" name="fraga2" value="Ev. senare"> Ev. senare</label>
+      </div>
+    </fieldset>
+
+    <!-- Fråga 3 -->
+    <fieldset>
+      <legend>3. Får du tillräckligt med återkoppling från chefer?</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="fraga3" value="Ja"> Ja</label>
+        <label><input type="radio" name="fraga3" value="Nej"> Nej</label>
+        <label><input type="radio" name="fraga3" value="Ev. senare"> Ev. senare</label>
+      </div>
+    </fieldset>
+
+    <!-- Fråga 4 med Oscar-bild -->
+    <fieldset>
+      <legend>4. Tycker du att kommunikationen fungerar bra mellan avdelningarna?</legend>
+      <img src="Oscar.jpg" alt="Oscar"><br>
+      <div class="radio-group">
+        <label><input type="radio" name="fraga4" value="Ja"> Ja</label>
+        <label><input type="radio" name="fraga4" value="Nej"> Nej</label>
+        <label><input type="radio" name="fraga4" value="Ev. senare"> Ev. senare</label>
+      </div>
+    </fieldset>
+
+    <!-- Fråga 5–39 (exempelmall, kopiera samma mönster) -->
+    <!-- Jag skriver bara ut några, du duplicerar blocket upp till fråga 39 -->
+    <fieldset>
+      <legend>5. Har du möjlighet att påverka din arbetsdag?</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="fraga5" value="Ja"> Ja</label>
+        <label><input type="radio" name="fraga5" value="Nej"> Nej</label>
+        <label><input type="radio" name="fraga5" value="Ev. senare"> Ev. senare</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>6. Känner du att dina idéer tas på allvar?</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="fraga6" value="Ja"> Ja</label>
+        <label><input type="radio" name="fraga6" value="Nej"> Nej</label>
+        <label><input type="radio" name="fraga6" value="Ev. senare"> Ev. senare</label>
+      </div>
+    </fieldset>
+
+    <!-- … fortsätt kopiera och ändra name/legend fram till fraga39 … -->
+
+    <!-- Fråga 40 -->
+    <fieldset>
+      <legend>40. Skulle du rekommendera arbetsplatsen till andra?</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="fraga40" value="Ja"> Ja</label>
+        <label><input type="radio" name="fraga40" value="Nej"> Nej</label>
+        <label><input type="radio" name="fraga40" value="Ev. senare"> Ev. senare</label>
+      </div>
+    </fieldset>
+
+    <!-- Bakgrundsfrågor -->
+    <fieldset>
+      <legend>Bakgrundsfrågor</legend>
+      <label>Vilken stad bor du i?<br>
+        <input type="text" name="stad">
+      </label><br><br>
+
+      <label>Civilstatus:<br>
+        <select name="civilstatus">
+          <option>Singel</option>
+          <option>Sambo</option>
+          <option>Gift</option>
+        </select>
+      </label><br><br>
+
+      <label>Din e-postadress:<br>
+        <input type="email" name="email">
+      </label>
+    </fieldset>
+
+    <!-- Öppen slutfråga -->
+    <fieldset>
+      <legend>41. Om du får välja själv: Beskriv vad du vill.</legend>
+      <textarea name="fraga41" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <button type="submit" class="submit-button">Skicka</button>
+  </form>
+</body>
+</html>
